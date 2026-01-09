@@ -1,12 +1,12 @@
 # tongue-ina
-Tongue-ina is a Web-based **sugar vs. salt optimizer** tool like yo mama's tastes
+tongue-ina is a Web-based **sugar vs. salt optimizer** tool like yo mama's tastes<br>
 NOT REQUIRING full ingredient list or advanced cooking knowledge
 - suggests reasonable salt and sugar measurements based on food category
 - helps users rebalance flavor after tastin'
 - gradually learns individual taste preferences over time
 
 ## Why this tool
-I've been tasting/flavoring my food by intuition
+I've been tasting/flavoring my food by intuition<br>
 Be like:
 - “This taste like grandma food”
 - “This tastes too gay"
@@ -44,7 +44,7 @@ https://www.who.int/news-room/fact-sheets/detail/sodium-reduction
 https://www.who.int/tools/elena/interventions/sodium-cvd-adults
 
 **Learning approach**
-Tongue-ina uses incremental preference calibration:
+tongue-ina uses incremental preference calibration:
 - Each rating slightly shifts future recommendations
 - Preferences are tracked per food category
 - Adjustments are slow and bounded
