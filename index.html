@@ -7,35 +7,41 @@
 <body>
 
 <h1>Tongue-ina</h1>
+<div id="categorySection">
 
-<label>Category:</label>
-<select id="category">
-  <option value="soup">Soup</option>
-  <option value="coffee">Coffee</option>
-</select>
+  <label>Category:</label>
+  <select id="category">
+    <option value="soup">Soup</option>
+    <option value="coffee">Coffee</option>
+  </select>
 
-<br><br>
+  <br><br>
 
-<button onclick="runRecommendation()">Get Recommendation</button>
+  <button onclick="runRecommendation()">Get Recommendation</button>
 
-<pre id="output"></pre>
+  <pre id="output"></pre>
 
-<label>Saltiness (1–5):</label>
-<input type="range" id="saltRating" min="1" max="5" value="3">
-<span id="saltValue">3</span>
+</div>
 
-<br><br>
+<div id="feedbackSection" style="display: none;">
 
-<label>Sweetness (1–5):</label>
-<input type="range" id="sweetRating" min="1" max="5" value="3">
-<span id="sweetValue">3</span>
+  <label>Saltiness:</label>
+  <input type="range" id="saltRating" min="1" max="5" value="3">
+  <span id="saltValue">3</span>
 
-<br><br>
+  <br><br>
 
-<button onclick="submitFeedback()">Submit Feedback</button>
+  <label>Sweetness:</label>
+  <input type="range" id="sweetRating" min="1" max="5" value="3">
+  <span id="sweetValue">3</span>
 
-<pre id="advice"></pre>
+  <br><br>
 
+  <button onclick="submitFeedback()">Submit Feedback</button>
+
+  <pre id="advice"></pre>
+
+</div>
 <script src="js/constants.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/conversions.js"></script>
