@@ -3,6 +3,9 @@
 let currentUser = loadUser();
 let currentCategory = null;
 
+const categorySection = document.getElementById("categorySection");
+const feedbackSection = document.getElementById("feedbackSection");
+
 const saltSlider = document.getElementById("saltRating");
 const sweetSlider = document.getElementById("sweetRating");
 
@@ -14,8 +17,13 @@ sweetSlider.oninput = () =>
 
 function runRecommendation() {
   currentCategory = document.getElementById("category").value;
+
   const result = getRecommendation(currentUser, currentCategory);
   document.getElementById("output").innerText = result.message;
+
+  // SWITCH UI STATE
+  categorySection.style.display = "none";
+  feedbackSection.style.display = "block";
 }
 
 function submitFeedback() {
@@ -27,4 +35,14 @@ function submitFeedback() {
 
   updatePreferences(currentUser, currentCategory, salt, sweet);
   saveUser(currentUser);
+
+  // RESET SLIDERS
+  saltSlider.value = 3;
+  sweetSlider.value = 3;
+  document.getElementById("saltValue").innerText = "3";
+  document.getElementById("sweetValue").innerText = "3";
+
+  // SWITCH BACK TO CATEGORY
+  feedbackSection.style.display = "none";
+  categorySection.style.display = "block";
 }
