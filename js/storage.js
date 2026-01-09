@@ -1,7 +1,11 @@
 function loadUser() {
-  return { preferences: {} };
+  const data = localStorage.getItem("tastebalance_user");
+  if (!data) {
+    return { preferences: {} };
+  }
+  return JSON.parse(data);
 }
 
 function saveUser(user) {
-  console.log("User saved:", user);
+  localStorage.setItem("tastebalance_user", JSON.stringify(user));
 }

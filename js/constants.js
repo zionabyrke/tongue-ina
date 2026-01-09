@@ -7,3 +7,5 @@ const BASELINES = {
   dessert_soft: { salt: 0.3, sugar: 15.0 },
   dessert_dry: { salt: 0.4, sugar: 20.0 }
 };
+
+const LEARNING_RATE = 0.1;
