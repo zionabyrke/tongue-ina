@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tongue-ina</title>
+</head>
+<body>
+
+<h1>Tongue-ina</h1>
+
+<label>Category:</label>
+<select id="category">
+  <option value="soup">Soup</option>
+  <option value="coffee">Coffee</option>
+</select>
+
+<br><br>
+
+<button onclick="runRecommendation()">Get Recommendation</button>
+
+<pre id="output"></pre>
+
+<label>Saltiness (1–5):</label>
+<input type="range" id="saltRating" min="1" max="5" value="3">
+<span id="saltValue">3</span>
+
+<br><br>
+
+<label>Sweetness (1–5):</label>
+<input type="range" id="sweetRating" min="1" max="5" value="3">
+<span id="sweetValue">3</span>
+
+<br><br>
+
+<button onclick="submitFeedback()">Submit Feedback</button>
+
+<pre id="advice"></pre>
+
+<script src="js/constants.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/conversions.js"></script>
+<script src="js/recommend.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/learning.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
