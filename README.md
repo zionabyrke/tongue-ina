@@ -50,9 +50,9 @@ tongue-ina uses incremental preference calibration:
 - Adjustments are slow and bounded
 
 ## What this app is not
-❌Not a medical or nutrition diagnosis tool
-❌Not a calorie counter
-❌Not a recipe generator
+❌Not a medical or nutrition diagnosis tool<br>
+❌Not a calorie counter<br>
+❌Not a recipe generator<br>
 It is a taste-support tool, really
 
 **Who this is for**
